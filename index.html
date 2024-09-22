@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Money Converter</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <h1>Selecione a moeda que deseja converter:</h1>
+
+        <select name="to-convert" id="to-convert" onchange="clickButton()">
+            <option value="BRL" class="default1">R$ - Real Brasileiro</option>
+        </select>
+
+        <h1>Selecione a moeda para qual deseja converter:</h1>
+
+        <select name="convert-for" id="convert-for" onchange="clickButton()">
+            <option value="USD" class="default2">U$ - Dólar Americano</option>
+        </select>
+
+        <h1>Digite o valor a ser convertido:</h1>
+
+        <input class="value" type="number" placeholder="0,00" step="0.01">
+        <button onclick="clickButton()">Converter</button>
+
+        <div class="result">
+
+            <img class="img-to-convert" src="./img/BRL.png">
+            <p class="p-to-convert">R$ - Real Brasileiro</p>
+            <h3 class="h-to-convert"></h3>
+
+            <br>
+            <img src="./img/seta.png" alt="">
+            <br>
+
+            <img class="img-convert-for" src="./img/USD.png" alt="">
+            <p class="p-convert-for">U$ - Dolar Americano</p>
+            <h3 class="h-convert-for"></h3>
+
+        </div>
+
+    </div>
+
+
+</body>
+
+<script src="scripts.js"></script>
+<script src="apiscripts.js"></script>
+
+</html>

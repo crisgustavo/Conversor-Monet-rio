@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: blueviolet;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    border: 2px solid lightgreen;
+    border-radius: 15px;
+    padding: 10px;
+    background-color: rgb(235, 235, 235);
+}
+
+.result{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid lightgreen;
+    border-radius: 15px;
+    width: 300px;
+    align-items: center;
+    padding: 15px;
+    margin-top: 15px;
+    justify-content: space-between;
+    background-color: white;
+}
+
+img{
+    width: 60px;
+}
+
+h1{
+    font-size: 18px;
+}
+
+select{
+    border-radius: 5px;
+    border: 2px solid lightgreen;
+    font-size: 15px;
+    padding: 2px;
+}
+
+input{
+    text-align: right;
+    border-radius: 5px;
+    border-color: lightgreen;
+    font-size: 15px;
+    padding: 2px;
+    padding-right: 5px;
+}
+
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    
+}
+input[type=number] { 
+   -moz-appearance: textfield;
+   appearance: textfield;
+}
+
+button{
+    border: 2px solid rgb(117, 190, 117);
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: bolder;
+    padding: 2px;
+    background-color: lightgreen;
+    width: 100px;
+}
