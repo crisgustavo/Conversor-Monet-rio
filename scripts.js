@@ -73,7 +73,7 @@ async function clickButton() {
     let formatConverted = ''
 
     if (toConvert !== 'BRL'){ //REVISAR ESSA PARTE DO CÓDIGO
-        const dataToBRL = await fetch(`http://economia.awesomeapi.com.br/json/last/${toConvert}`).then(response => response.json())
+        const dataToBRL = await fetch(`https://economia.awesomeapi.com.br/json/last/${toConvert}`).then(response => response.json())
         if (toConvert === 'USDT') {priceToBRL = dataToBRL['USDBRLT'].high}
         else {priceToBRL = dataToBRL[toConvert+'BRL'].high}
         valueToBRL = value * priceToBRL
@@ -82,7 +82,7 @@ async function clickButton() {
     }
 
     if (convertFor !== 'BRL'){
-        const dataFromBRL = await fetch(`http://economia.awesomeapi.com.br/json/last/${convertFor}`).then(response => response.json())
+        const dataFromBRL = await fetch(`https://economia.awesomeapi.com.br/json/last/${convertFor}`).then(response => response.json())
         if (convertFor === 'USDT') {priceFromBRL = dataFromBRL['USDBRLT'].high}
         else {priceFromBRL = dataFromBRL[convertFor+'BRL'].high}
         valueFromBRL = valueToBRL / priceFromBRL
